@@ -1,0 +1,41 @@
+header {
+    height:60px;
+    background-color: #CBC3E3;
+    font-family: 'Montserrat', serif;
+    font-weight: 7000;
+    text-decoration: none;
+}
+
+#header-container{
+    width:97%;
+    margin:auto;
+}
+.decor{
+    text-decoration: none;
+    color:black;
+}
+.col-4 {
+    float:left;
+}
+.col-4-right {
+    float:right;
+}
+.menu {
+    text-decoration: none;
+    float:right;
+    margin-top:20px;
+}
+.menu-left {
+    text-decoration: none;
+    float:left;
+    margin-top:20px;
+}
+
+.menu li {
+    list-style-type:none;
+    display:inline;
+    font-size:1em;
+    color:black;
+    font-weight: bold;
+    padding-right: 30px;
+}

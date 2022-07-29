@@ -1,0 +1,70 @@
+<app-dashboard-header></app-dashboard-header>
+<head>
+    <meta charset="utf-8">
+    <title>RIA Assignment Two</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
+</head>
+<body>
+    <div id="top-section-main1">
+        <div class="box">
+            <div class="login-form">
+                <h2>CREATE A PROJECT</h2>
+                <p>You can create a project for your workspace here.</p>
+
+                <form (ngSubmit)="onSubmit()" #projectForm="ngForm">
+                    <div class="container">
+                        <div class="spacing">
+                            <label for="username"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text" 
+                            id="username" 
+                            placeholder="Your Username" 
+                            name="username" 
+                            [(ngModel)]="project.username"
+                            required #username="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="name"><b></b></label>
+                            <input 
+                            class="enter" 
+                            id="name" 
+                            type="text" 
+                            placeholder="Project Name" 
+                            name="name" 
+                            [(ngModel)]="project.name"
+                            required #name="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="description"><b></b></label>
+                            <input 
+                            class="enter1" 
+                            type="text" 
+                            id="description" 
+                            placeholder="Project Description" 
+                            name="description" 
+                            [(ngModel)]="project.description"
+                            required #description="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="deadline"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text"
+                            id="deadline"  
+                            placeholder="Project End Date" 
+                            name="deadline" 
+                            [(ngModel)]="project.deadline"
+                            required #deadline="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <button type="submit" [disabled]="!projectForm.form.valid" 
+                            class="my-button">Create Project</button>
+                        </div>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>

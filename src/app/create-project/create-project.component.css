@@ -1,0 +1,91 @@
+p, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding-bottom:2px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+}
+
+.alertdanger{
+    font-size:1em;
+    color:red;
+}
+
+.box{
+    border-radius: 4%;
+    top: 15%;
+    display:flex;
+    margin:auto;
+    position: relative;
+    width:45%;
+    background-color:white;
+    height:500px;
+}
+
+.login-form{
+    width:100%;
+    margin:auto;
+    padding:30px 30px 30px 30px;
+}
+
+#top-section-main1{
+    margin-top:0;
+    margin:auto;
+    height:900px;
+    background-image: url("download17.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    width:97%;
+    border:none;
+}
+.my-button {
+    font-family: 'Montserrat', serif;
+    font-weight: 1000;
+    background-color: #F5F5DC;
+    border: none;
+    width:50%;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+  }
+.my-button:hover {
+    background-color:#D3D3D3;
+    transition: 0.7s;
+}
+
+.container{
+    margin:auto;
+    margin-top:0;
+    width:80%;
+    margin-bottom:0;
+    font-family: 'Montserrat', serif;
+    font-weight: 1000;
+}
+form{
+    padding-top:20px;
+    text-align:center;
+}
+.enter {
+    font-family: 'Montserrat', serif;
+    font-weight: 1000;
+    background-color: #D3D3D3;
+    border:none;
+    height:40px;
+    width:70%;
+}
+
+.enter1 {
+    font-family: 'Montserrat', serif;
+    font-weight: 1000;
+    background-color: #D3D3D3;
+    border:none;
+    height:40px;
+    width:70%;
+}
+
+.spacing{
+    padding-bottom:1.5em;
+}

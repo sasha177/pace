@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8">
+    <title>RIA Assignment Two</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
+</head>
+<body id="anchor">
+    <div id="top-section-main1">
+        <div class="box">
+            <div class="login-form">
+                <h2>WELCOME BACK :)</h2>
+
+                <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+
+                    <div class="container">
+                        <div class="spacing">
+                            <label for="login-username"><b></b></label>
+                            <input class="enter" type="text" placeholder="Username" name="login-username" required>
+                        </div>
+                        <div class="spacing">
+                            <label for="psw"><b></b></label>
+                            <input class="enter" type="password" placeholder="Password" name="psw" required>
+                        </div>
+                        <div class="spacing">
+                            <button type="submit" [disabled]="!loginForm.form.valid" 
+                            class="my-button">Login</button>
+                        </div>
+                    </div>
+                  
+                  </form>
+                  <a href="/dashboard"><button class="my-button"><strong>skip to dashboard</strong></button></a>
+            </div>
+        </div>
+    </div>
+</body>

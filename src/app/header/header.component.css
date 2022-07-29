@@ -1,0 +1,34 @@
+header {
+    height:80px;
+    background-color: white;
+    font-family: 'Montserrat', serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header-container{
+    width:75%;
+    margin:auto;
+}
+.decor{
+    text-decoration: none;
+    color:black;
+}
+.col-4 {
+    float:right;
+    width:50%;
+}
+.menu {
+    text-decoration: none;
+    float:right;
+    margin-top:25px;
+}
+
+.menu li {
+    list-style-type:none;
+    display:inline;
+    font-size:0.85em;
+    color:black;
+    font-weight: bold;
+    padding-right: 35px;
+}

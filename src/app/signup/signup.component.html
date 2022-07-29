@@ -1,0 +1,77 @@
+<app-header></app-header>
+<head>
+    <meta charset="utf-8">
+    <title>RIA Assignment Two</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300">
+</head>
+<body id="anchors">
+    <div id="top-section-main1">
+        <div class="box">
+            <div class="login-form">
+                <h2>SIGN UP TODAY!</h2>
+
+                <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+
+                    <div class="container">
+                        <div class="spacing">
+                            <label for="name"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text" 
+                            placeholder="Full Name" 
+                            name="name" 
+                            [(ngModel)]="user.name"
+                            required #name="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="username"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text" 
+                            placeholder="Username" 
+                            name="username" 
+                            [(ngModel)]="user.username"
+                            required #username="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="email"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text" 
+                            placeholder="Email" 
+                            name="email" 
+                            [(ngModel)]="user.email"
+                            required #email="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="phone"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="text" 
+                            placeholder="Phone Number" 
+                            name="phone" 
+                            [(ngModel)]="user.phone"
+                            required #phone="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <label for="password"><b></b></label>
+                            <input 
+                            class="enter" 
+                            type="password" 
+                            placeholder="Password" 
+                            name="password" 
+                            [(ngModel)]="user.password"
+                            required #password="ngModel">
+                        </div>
+                        <div class="spacing">
+                            <button type="submit" [disabled]="!userForm.form.valid" 
+                            class="my-button">Sign Up</button>
+                        </div>
+                    </div>
+                  
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+<app-footer></app-footer>
